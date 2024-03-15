@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Projet2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Inter:wght@900&display=swap"
+		rel="stylesheet">
+	<title>Riding Cities</title>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<img src="images/header.png" alt="skateboard sur un sol goudronné">
+			<div class="headerTextContent">
+				<h1>RIDING CITIES</h1>
+			</div>
+		</header>
+		<main>
+			<section>
+				<h2>Les missions de l'asso</h2>
+				<div class="directionRow">
+					<article>
+						<h3>Promouvoir</h3>
+						<p>L'asso regroupe des passionnés de glisse et plus particulièrement de skateboard qui œuvrent pour la
+							promotion de ce sport au niveau régional.</p>
+					</article>
+					<article>
+						<h3>Transmettre</h3>
+						<p>Nous proposons des cours pour enfants, ados et adultes. Nous intervenons également dans les écoles
+							pour faire découvrir le skate aux plus jeunes.</p>
+					</article>
+					<article>
+						<h3>Entraîner</h3>
+						<p>Nous accompagnons nos membres sur les compétitions en les préparant physiquement à donner le
+							meilleur d'eux-mêmes.</p>
+					</article>
+					<article>
+						<h3>Fédérer</h3>
+						<p>L'asso organise tout au long de l'année des évènements autour du skate pour réunir toujours plus de
+							monde autour de cette pratique.</p>
+					</article>
+				</div>
+			</section>
+			<!-- Reprise de la section mission de l'asso en modifiant son contenu -->
+			<!-- Je lie la class CSS éxistante pour changer la couleur de fond et la class pour centrer le texte en blanc-->
+			<section class="sectionLinearGradientBackground whiteContentSection textCenter">
+				<h2>Les membres fondateurs</h2>
+				<div class="directionRow">
+					<article>
+						<!--J'intègre les photos depuis mon dossier /images avec un descriptif de chaque photo, un titre pour le nom et un paragraphe pour la discipline-->
+						<img src="images/soraya.png" alt="Photo de Soraya">
+						<h3>Soraya</h3>
+						<p>Longboard</p>
+					</article>
+					<article>
+						<img src="images/marc.png" alt="Photo de Marc">
+						<h3>Marc</h3>
+						<p>Street</p>
+					</article>
+					<article>
+						<img src="images/pedro.png" alt="Photo de Pedro">
+						<h3>Pedro</h3>
+						<p>Pool</p>
+					</article>
+				</div>
+			</section>
+			<!--Je crée une nouvelle section avec un fond gris clair en utilisant la class CSS éxistante-->
+			<section class="sectionLightGreyBackground">
+				<!--J'utilise le h2 qui utilise déja la propriété CSS qui a comme couleur principale le rouge-->
+				<h2>Découvrez nos cours !</h2>
+				<!--Je déclare la class qui permettra via le CSS une disposition en colonne-->
+				<div class="directionColumn">
+					<!--Je modifie le premier bouton et j'en crée 2 nouveaux avec des angles arrondis et en déclarant les liens de plannings en pdf avec la balise <a pour lien hypertexte-->
+					<!--Les deux class renvoient aux propriétés CSS pur faire des bords arrondis et à la propriété "hover" pour donner un style lors du survol de la souris-->
+					<a class="button buttonMainColor buttonRounded buttonHighlight"
+						href="documents/planning-adultes.pdf">Télécharger le planning de cours pour adultes</a>
+					<a class="button buttonSecondColor buttonRounded buttonHighlight"
+						href="documents/planning-enfants.pdf">Télécharger le planning de cours pour enfants</a>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>
